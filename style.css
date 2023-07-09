@@ -92,6 +92,8 @@ input[type="search"]{
 .header-lower-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-right: 0.7rem;
+    gap: 1rem;
 }
 
 .user-welcome{
@@ -107,7 +109,13 @@ input[type="search"]{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-left: 1rem;
+    justify-self: end;
+    max-height: 3rem;
+    align-items: center;
 }
+
+
 
 .user-logo{
     background-color: var(--light-color);
