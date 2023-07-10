@@ -189,10 +189,32 @@ main{
     right: 20px;
 }
 
+
 .announcements{
     grid-column: 2 / 3;
     grid-row: 1;
 }
+
+.announcements-container{
+    background-color: white;
+    border-radius: 0.7rem;
+    padding: 1.8rem;
+    font-size: 0.7rem;
+    max-width: 13rem;
+    margin-top: 1rem;
+}
+
+.announcement{
+    margin-bottom: 0.8rem;
+    border-bottom: 1px #bcb8b8 solid;
+    padding-bottom: 0.5rem;
+}
+
+.announcement:last-child{
+    border-bottom: none;
+}
+
+
 
 .trending{
     grid-column: 2 / 3;
