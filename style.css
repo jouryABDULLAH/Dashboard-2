@@ -14,7 +14,9 @@ html{
 :root{
     --strong-color: #aeecd1;
     --light-color: #e8f8f1;
-    --secondary-color: #f66060;    
+    /* --secondary-color: #f66060;     */
+    --secondary-color: #0891b2;    
+
 }
 
 ul{
@@ -30,11 +32,11 @@ img{
     height: 1.3rem;
 }
 
-.user-small-logo{
+.user-small-logo > img{
     background-color: var(--light-color);
-    height: 2.3rem;
+    height: 2.5rem;
     border-radius: 50%;
-    width: 2.3rem;
+    width: 2.5rem;
     align-self: center;
 }
 
@@ -136,7 +138,7 @@ input[type="search"]{
 }
 
 
-.user-logo{
+.user-logo > img{
     background-color: var(--light-color);
     height: 3rem;
     width: 3rem;
