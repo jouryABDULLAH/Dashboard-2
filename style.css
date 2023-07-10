@@ -26,10 +26,11 @@ ul{
     height: 2.3rem;
     border-radius: 50%;
     width: 2.3rem;
+    align-self: center;
 }
 
 button{
-    padding: 0.5rem 0.9rem;
+    padding: 0.5rem 1.5rem;
     background-color: var(--strong-color);
     color: white;
     border: none;
@@ -39,7 +40,7 @@ button{
 .conatiner{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    /* grid-template-rows: 1fr 4fr; */
 }
 
 
@@ -49,7 +50,8 @@ header{
     grid-row: 1 / 2;
     background-color: white;
     display: grid;
-    padding: 0.8rem 0.8rem 0 0.8rem;
+    padding: 0.8rem 0.8rem 1rem 0.8rem;
+    grid-template-rows: min-content min-content ;
 }
 
 .header-upper-section{
@@ -84,8 +86,14 @@ input[type="search"]{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.user-header-logo-username{
+    display: flex;
+    gap: 0.5rem;
+}
+
 .notifications, .header-upper-username{
     align-self: center;
+    justify-self: center;
 }
 
 
@@ -94,6 +102,7 @@ input[type="search"]{
     grid-template-columns: 1fr 1fr;
     padding-right: 0.7rem;
     gap: 1rem;
+    align-content: center;
 }
 
 .user-welcome{
@@ -113,7 +122,9 @@ input[type="search"]{
     justify-self: end;
     max-height: 3rem;
     align-items: center;
+    margin-right: 3rem;
 }
+
 
 .user-logo{
     background-color: var(--light-color);
@@ -150,15 +161,13 @@ main{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 15px;
+    gap: 2rem;
     padding: 1.3rem;
 }
 
 .projects{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
-    /* or just keep the parent grid gap*/
-    padding-right: 1.8rem;
 }
 
 .cards{
@@ -221,3 +230,17 @@ main{
     grid-row: 2 / 3;
 }
 
+.trending-container{
+    background-color: white;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: row;
+}
+
+.trending-user{
+    display: flex;
+    gap: 1rem;
+}
