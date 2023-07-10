@@ -18,7 +18,12 @@ html{
 }
 
 ul{
-    list-style: none;
+    list-style: none;  
+}
+
+a{
+    color: white;
+    text-decoration: none;
 }
 
 .user-small-logo{
@@ -153,6 +158,12 @@ nav {
     font-weight: bold;
 }
 
+.access-buttons,
+.admin-buttons{
+    display: grid;
+    gap: 1rem;
+}
+
 main{
     /* grid-column: 2 / 3;
     grid-row: 2 / 3; */
@@ -196,6 +207,8 @@ main{
     position: absolute;    
     bottom: 24px;
     right: 20px;
+    display: flex;
+    gap: 0.3rem;
 }
 
 
